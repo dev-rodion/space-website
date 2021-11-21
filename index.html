@@ -5,7 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Space Web</title>
+    <link rel="stylesheet" href="css/glider.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="/images/svg/small_head.svg"
+      type="image/svg"
+    />
   </head>
   <body>
     <div class="wrapper">
@@ -38,7 +44,7 @@
             <a class="link header__link" href="tel:+12345678901">
               +1 234-567-8901
               <img
-                class="header__phone_icon"
+                class="header__link_icon"
                 src="images/svg/small_head.svg"
                 alt="Astronaut Head Icon"
                 width="30"
@@ -61,7 +67,7 @@
               </h1>
               <div class="intro__main_subtitle">
                 <p>The future has already arrived!</p>
-                <p>Осуществи мечту детства!</p>
+                <p>Make your childhood dream come true!</p>
               </div>
               <button class="button intro__button">
                 I want to be an astronaut!
@@ -69,16 +75,25 @@
             </div>
 
             <!-- Info -->
-            <div class="intro__info_box">
-              <p class="intro__info__col">
+            <div class="info_box intro__info_box">
+              <p class="info__col intro__info__col">
                 In 2021, a new era in space exploration has begun - the era of
                 space tourism. Private companies have gained access to outer
                 space.
               </p>
-              <p class="intro__info__col">
+              <p class="info__col intro__info__col">
                 Competition has intensified between them, and the price of a
                 ticket for flights to outer space has dropped a hundred times.
               </p>
+            </div>
+
+            <!-- Background -->
+            <div class="intro__bg">
+              <img
+                class="intro__bg_img"
+                src="images/jpg/intro_bg.jpg"
+                alt="Astronaut on the background of space"
+              />
             </div>
           </div>
         </div>
@@ -96,7 +111,13 @@
             <!-- Item -->
             <div class="about__item">
               <div class="about__item_img_box">
-                <img class="about__item_img" src="" alt="" />
+                <img
+                  class="about__item_img"
+                  src="images/jpg/virgin_galactic_img.jpg"
+                  alt="Richard Branson with champagne"
+                  width="500"
+                  height="540"
+                />
               </div>
               <div class="about__item_content">
                 <h4 class="about__item_name">Virgin Galactic</h4>
@@ -150,7 +171,13 @@
             <!-- Item -->
             <div class="about__item">
               <div class="about__item_img_box">
-                <img class="about__item_img" src="" alt="" />
+                <img
+                  class="about__item_img"
+                  src="images/jpg/blue_origin_img.jpg"
+                  alt="Jeff Bezos and Blue Origin"
+                  width="500"
+                  height="700"
+                />
               </div>
               <div class="about__item_content">
                 <h4 class="about__item_name">Blue Origin</h4>
@@ -206,7 +233,13 @@
             <!-- Item -->
             <div class="about__item">
               <div class="about__item_img_box">
-                <img class="about__item_img" src="" alt="" />
+                <img
+                  class="about__item_img"
+                  src="images/jpg/spacex_img.jpg"
+                  alt="Elon Musk on the background of Mars and Rocket"
+                  width="500"
+                  height="603"
+                />
               </div>
               <div class="about__item_content">
                 <h4 class="about__item_name">SpaceX</h4>
@@ -295,10 +328,7 @@
               </div>
               <div class="scheme__item">
                 <span class="scheme__point"></span>
-                <p class="scheme__text">
-                  Eating from tubes: 5 types of menu to choose from (vegan,
-                  sports, lactose-free, gluten-free, regular)
-                </p>
+                <p class="scheme__text">Taking a photo on Instagram</p>
               </div>
               <div class="scheme__item">
                 <span class="scheme__point"></span>
@@ -306,7 +336,10 @@
               </div>
               <div class="scheme__item">
                 <span class="scheme__point"></span>
-                <p class="scheme__text">Taking a photo on Instagram</p>
+                <p class="scheme__text">
+                  Eating from tubes: 5 types of menu to choose from (vegan,
+                  sports, lactose-free, gluten-free, regular)
+                </p>
               </div>
             </div>
           </div>
@@ -334,11 +367,13 @@
               </div>
             </div>
 
-            <img
-              class="cta__bg_img"
-              src="images/jpg/cta_bg.jpg"
-              alt="Astronaut on the moon with a bottle of beer"
-            />
+            <div class="cta__bg">
+              <img
+                class="cta__bg_img"
+                src="images/jpg/cta_bg.jpg"
+                alt="Astronaut on the moon with a bottle of beer"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -362,8 +397,8 @@
                     1000 $
                   </p>
                   <div class="special__item_price_box">
-                    <p class="special__item_new_price">$ 249 000</p>
                     <p class="special__item_old_price">$ 250 000</p>
+                    <p class="special__item_new_price">$ 249 000</p>
                   </div>
                 </div>
                 <button class="button special__item_button">
@@ -379,8 +414,8 @@
                     next flight if you return
                   </p>
                   <div class="special__item_price_box">
-                    <p class="special__item_new_price">$ 225 000</p>
                     <p class="special__item_old_price">$ 250 000</p>
+                    <p class="special__item_new_price">$ 225 000</p>
                   </div>
                 </div>
                 <button class="button special__item_button">
@@ -425,13 +460,20 @@
                 </div>
 
                 <p class="services__small_text">
-                  The cost of a photo session in zero gravity is $ 100,000. Pay
-                  $ 50,000 extra and get all color graded photos on disk.
+                  * The cost of a photo session in zero gravity is $ 100,000.
+                  Pay $ 50,000 extra and get all color graded photos on disk.
                 </p>
               </div>
 
               <div class="services__buttons">
                 <button class="button services__button">
+                  <img
+                    class="services__button_img"
+                    src="images/png/small_astronaut.png"
+                    width="192"
+                    height=""
+                    alt=""
+                  />
                   Buy photographer services
                 </button>
                 <button class="button services__button">Want and dics</button>
@@ -446,19 +488,41 @@
         <div class="container">
           <div class="gallery__inner">
             <!-- Content -->
-            <div class="gallery__content">
+            <div class="slider__box gallery__content">
               <!-- Slider -->
-              <div class="slider gallery__slider">
-                <div class="slider__item">
-                  <img src="images/jpg/gallery_img_01.jpg" alt="_________" />
-                </div>
-                <div class="slider__item">
-                  <img src="images/jpg/gallery_img_01" alt="_________" />
-                </div>
-                <div class="slider__item">
-                  <img src="images/jpg/gallery_img_01" alt="_________" />
-                </div>
+              <div
+                class="slider gallery__slider"
+                id="slider"
+                data-glide-el="track"
+              >
+                <img
+                  class="slider__img"
+                  src="images/jpg/gallery_img_01.jpg"
+                  alt="_________"
+                  width="800"
+                  height="450"
+                />
+                <img
+                  class="slider__img"
+                  src="images/jpg/gallery_img_01.jpg"
+                  alt="_________"
+                  width="800"
+                  height="450"
+                />
+                <img
+                  class="slider__img"
+                  src="images/jpg/gallery_img_01.jpg"
+                  alt="_________"
+                  width="800"
+                  height="450"
+                />
               </div>
+              <button class="slider__arrow arrow_prev">
+                <img src="images/svg/arrow_left.svg" alt="" />
+              </button>
+              <button class="slider__arrow arrow_next">
+                <img src="images/svg/arrow_right.svg" alt="" />
+              </button>
             </div>
 
             <!-- Bottom -->
@@ -472,59 +536,89 @@
         </div>
       </section>
 
-      <!-- Contacts -->
-      <section class="section contacts">
+      <div class="sections_box">
         <div class="container">
-          <div class="contacts__inners">
-            <!-- Top -->
-            <div class="section__top contacts__tops">
-              <h2 class="title section__title">Contacts</h2>
-            </div>
+          <div class="sections_box__inner">
+            <!-- Contacts -->
+            <section class="section contacts">
+              <div class="contacts__inners">
+                <!-- Top -->
+                <div class="section__top contacts__tops">
+                  <h2 class="title section__title">Contacts</h2>
+                </div>
 
-            <!-- Form -->
-            <div class="form contacts__form">
-              <input class="form__input" type="text" name="full_name" id="input__full_name" placeholder="Full name" />
-              <input class="form__input" type="text" name="child_name" id="input__child_name"  placeholder="Name of the child or grandchild (just in case)" />
-              <input class="form__input" type="text" name="phone" id="input__phone"  placeholder="Phone Number" />
+                <p class="contacts__text">
+                  Leave your contacts and we will call you back in the next 100
+                  years!
+                </p>
 
-              <button class="button form__button" type="submit">
-                Book a flight
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
+                <!-- Form -->
+                <form class="form contacts__form" autocomplete="off">
+                  <input
+                    class="form__input"
+                    type="text"
+                    name="full_name"
+                    id="input__full_name"
+                    placeholder="Full name"
+                    autocomplete="off"
+                  />
+                  <input
+                    class="form__input"
+                    type="text"
+                    name="child_name"
+                    id="input__child_name"
+                    placeholder="Name of the child or grandchild (just in case)"
+                    autocomplete="off"
+                  />
+                  <input
+                    class="form__input"
+                    type="text"
+                    name="phone"
+                    id="input__phone"
+                    placeholder="Phone Number"
+                    autocomplete="off"
+                  />
 
-      <!-- Guarantees -->
-      <section class="section guarantees">
-        <div class="container">
-          <div class="guarantees__inners">
-            <!-- Top -->
-            <div class="section__top guarantees__tops">
-              <h2 class="title section__title">Guarantees</h2>
-            </div>
-
-            <!-- Content -->
-            <div class="guarantees__content">
-              <p class="guarantees__text">
-                <q class="guarantees__quote"
-                  >Not a single rocket of mine has yet made a successful
-                  attempt, because you were not in it! <br />
-                  Be the first! Colonize Mars!</q
-                >
-                - Elon Musk
-              </p>
-              <div class="guarantees__img_box">
-                <img
-                  class="guarantees__img"
-                  src="images/png/elon_mask.png"
-                  alt="Smiling Elon Musk"
-                />
+                  <button class="button form__button" type="submit">
+                    Book a flight
+                  </button>
+                </form>
               </div>
-            </div>
+            </section>
+
+            <!-- Guarantees -->
+            <section class="section guarantees">
+              <div class="guarantees__inners">
+                <!-- Top -->
+                <div class="section__top guarantees__tops">
+                  <h2 class="title section__title">Guarantees</h2>
+                </div>
+
+                <!-- Content -->
+                <div class="guarantees__content">
+                  <p class="guarantees__text">
+                    <q class="guarantees__quote"
+                      >Not a single rocket of mine has yet made a successful
+                      attempt, because you were not in it!
+                      Be the first! Colonize Mars!</q
+                    >&nbsp;&nbsp;
+                    - Elon Musk
+                  </p>
+                  <div class="guarantees__img_box">
+                    <img
+                      class="guarantees__img"
+                      src="images/png/elon_mask.png"
+                      alt="Smiling Elon Musk"
+                      width="400"
+                      height="400"
+                    />
+                  </div>
+                </div>
+              </div>
+            </section>
           </div>
         </div>
-      </section>
+      </div>
 
       <!-- Footer -->
       <footer class="footer">
@@ -546,18 +640,34 @@
               <a class="link footer__link" href="#_________">News</a>
             </div>
             <div class="footer__col">
-              <a class="link footer__link" href="https://www.spacex.com/">spacex.com</a>
-              <a class="link footer__link" href="https://www.blueorigin.com/">blueorigin.com</a>
-              <a class="link footer__link" href="https://virgingalactic.com/">virgingalactic.com</a>
+              <a class="link footer__link" href="https://www.spacex.com/"
+                >spacex.com</a
+              >
+              <a class="link footer__link" href="https://www.blueorigin.com/"
+                >blueorigin.com</a
+              >
+              <a class="link footer__link" href="https://virgingalactic.com/"
+                >virgingalactic.com</a
+              >
               <a class="link link_red footer__link" href="tel:+12345678901">
                 +1 234-567-8901
               </a>
+            </div>
+
+             <!-- Background -->
+             <div class="footer__bg">
+              <img
+                class="footer__bg_img"
+                src="images/jpg/footer_bg.jpg"
+                alt="Astronaut on the background of space"
+              />
             </div>
           </div>
         </div>
       </footer>
     </div>
 
+    <script src="js/glider.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
