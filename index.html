@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Space Web</title>
-    <link rel="stylesheet" href="css/glider.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
     <link
       rel="shortcut icon"
       href="/images/svg/small_head.svg"
       type="image/svg"
     />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/tiny-slider.min.css" />
   </head>
   <body>
     <div class="wrapper">
@@ -100,7 +100,7 @@
       </div>
 
       <!-- About -->
-      <section class="section about">
+      <section class="section about" id="about">
         <div class="container">
           <div class="about__inner">
             <!-- Top -->
@@ -488,41 +488,47 @@
         <div class="container">
           <div class="gallery__inner">
             <!-- Content -->
-            <div class="slider__box gallery__content">
-              <!-- Slider -->
-              <div
-                class="slider gallery__slider"
-                id="slider"
-                data-glide-el="track"
-              >
-                <img
-                  class="slider__img"
-                  src="images/jpg/gallery_img_01.jpg"
-                  alt="_________"
-                  width="800"
-                  height="450"
-                />
-                <img
-                  class="slider__img"
-                  src="images/jpg/gallery_img_01.jpg"
-                  alt="_________"
-                  width="800"
-                  height="450"
-                />
-                <img
-                  class="slider__img"
-                  src="images/jpg/gallery_img_01.jpg"
-                  alt="_________"
-                  width="800"
-                  height="450"
-                />
+            <div class="gallery__content">
+              <div class="slider__box">
+                <!-- Slider -->
+                <div class="slider gallery__slider" id="slider">
+                  <div class="">
+                    <img
+                      class="slider__img"
+                      src="images/jpg/gallery_img_01.jpg"
+                      alt="_________"
+                      width="800"
+                      height="450"
+                    />
+                  </div>
+                  <div class="">
+                    <img
+                      class="slider__img"
+                      src="images/jpg/gallery_img_01.jpg"
+                      alt="_________"
+                      width="800"
+                      height="450"
+                    />
+                  </div>
+                  <div class="">
+                    <img
+                      class="slider__img"
+                      src="images/jpg/gallery_img_01.jpg"
+                      alt="_________"
+                      width="800"
+                      height="450"
+                    />
+                  </div>
+                </div>
               </div>
-              <button class="slider__arrow arrow_prev">
-                <img src="images/svg/arrow_left.svg" alt="" />
-              </button>
-              <button class="slider__arrow arrow_next">
-                <img src="images/svg/arrow_right.svg" alt="" />
-              </button>
+              <div class="slider__arrows">
+                <button class="slider__arrow arrow_prev">
+                  <img src="images/svg/arrow_left.svg" alt="" />
+                </button>
+                <button class="slider__arrow arrow_next">
+                  <img src="images/svg/arrow_right.svg" alt="" />
+                </button>
+              </div>
             </div>
 
             <!-- Bottom -->
@@ -599,10 +605,9 @@
                   <p class="guarantees__text">
                     <q class="guarantees__quote"
                       >Not a single rocket of mine has yet made a successful
-                      attempt, because you were not in it!
-                      Be the first! Colonize Mars!</q
-                    >&nbsp;&nbsp;
-                    - Elon Musk
+                      attempt, because you were not in it! Be the first!
+                      Colonize Mars!</q
+                    >&nbsp;&nbsp; - Elon Musk
                   </p>
                   <div class="guarantees__img_box">
                     <img
@@ -654,8 +659,8 @@
               </a>
             </div>
 
-             <!-- Background -->
-             <div class="footer__bg">
+            <!-- Background -->
+            <div class="footer__bg">
               <img
                 class="footer__bg_img"
                 src="images/jpg/footer_bg.jpg"
@@ -667,7 +672,8 @@
       </footer>
     </div>
 
-    <script src="js/glider.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/tiny-slider.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

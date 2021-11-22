@@ -1,22 +1,22 @@
 @font-face {
   font-family: "SF Pro Diplay";
-  font-weight: 400;
-  src: url("/fonts/SF-Pro-Display-Regular.woff2") format("woff2"),
-    url("/fonts/SF-Pro-Display-Regular.woff") format("woff");
+  src: url("/fonts/SF-Pro-Display-Regular.woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
   font-family: "SF Pro Diplay";
-  font-weight: 700;
-  src: url("/fonts/SF-Pro-Display-Bold.woff2") format("woff2"),
-    url("/fonts/SF-Pro-Display-Bold.woff") format("woff");
+  src: url("/fonts/SF-Pro-Display-Bold.woff");
+  font-weight: bold;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: "Space ыск Cyrillic";
-  font-weight: 400;
-  src: url("/fonts/spaceagecyrillic-regular.woff") format("woff"),
-    url("/fonts/spaceagecyrillic-regular.ttf") format("ttf");
+  font-family: "Space age Cyrillic";
+  src: url("/fonts/spaceagecyrillic-regular.woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 * {
@@ -399,6 +399,9 @@ img {
   width: 200px;
   transform: translate(0, 65px) rotate(36deg);
 }
+.scheme__item:nth-child(5) .scheme__text {
+  text-align: right;
+}
 .scheme__item:nth-child(6) {
   top: 515px;
   left: 386px;
@@ -561,23 +564,20 @@ img {
 }
 
 /* ===== Gallery ===== */
-.gallery {
-}
 .gallery__content {
   border: 1px solid #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 6.25em 3.125em;
+  position: relative;
 }
 
 .slider__box {
   position: relative;
-}
-.slider {
-  overflow: hidden;
-  width: 50em;
-  height: 28.125em;
+  max-width: 50em;
+  max-height: 28.125em;
+  /* width: 50em; */
 }
 .slider__img {
   width: 100%;
