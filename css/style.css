@@ -73,6 +73,7 @@ img {
 }
 
 .button {
+  display: inline-block;
   padding: 1.1em 3.5em;
   border: 1px solid #fff;
   background: none;
@@ -104,7 +105,7 @@ img {
 }
 
 ::-webkit-scrollbar {
-  width: 0;
+  /* width: 10px; */
 }
 
 .container {
@@ -432,6 +433,7 @@ img {
   background-color: #fff;
   transition: 0.3s;
 }
+
 .scheme__text {
   position: absolute;
   left: 100%;

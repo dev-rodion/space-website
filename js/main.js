@@ -1,6 +1,9 @@
 window.onload = function () {
+  // Select all the smooth links
   const smoothLinks = document.querySelectorAll('a[href^="#"]');
-  for (let smoothLink of smoothLinks) {
+
+  // Handle smooth links
+  for (const smoothLink of smoothLinks) {
     smoothLink.addEventListener("click", function (e) {
       e.preventDefault();
 
@@ -13,6 +16,7 @@ window.onload = function () {
     });
   }
 
+  // Tiny Slider
   var slider = tns({
     container: ".slider",
     items: 1,
@@ -24,17 +28,4 @@ window.onload = function () {
     controlsContainer: ".slider__arrows",
     nav: false,
   });
-
-  // new Glider(document.getElementById("slider"), {
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1,
-  //   scrollLock: true,
-  //   rewind: true,
-  //   draggable: true,
-  //   dragVelocity: 2,
-  //   arrows: {
-  //     prev: ".arrow_prev",
-  //     next: ".arrow_next",
-  //   },
-  // });
 };

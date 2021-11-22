@@ -26,16 +26,19 @@
                   <a class="link navbar__link" href="#about">About us</a>
                 </li>
                 <li class="navbar__item">
-                  <a class="link navbar__link" href="#_________">Prices</a>
+                  <a class="link navbar__link" href="#plan">Plan</a>
                 </li>
                 <li class="navbar__item">
-                  <a class="link navbar__link" href="#_________">Services</a>
+                  <a class="link navbar__link" href="#prices">Prices</a>
                 </li>
                 <li class="navbar__item">
-                  <a class="link navbar__link" href="#_________">Guarantees</a>
+                  <a class="link navbar__link" href="#services">Services</a>
                 </li>
                 <li class="navbar__item">
-                  <a class="link navbar__link" href="#_________">News</a>
+                  <a class="link navbar__link" href="#guarantees">guarantees</a>
+                </li>
+                <li class="navbar__item">
+                  <a class="link navbar__link" href="#contacts">Contacts</a>
                 </li>
               </ul>
             </nav>
@@ -69,9 +72,9 @@
                 <p>The future has already arrived!</p>
                 <p>Make your childhood dream come true!</p>
               </div>
-              <button class="button intro__button">
+              <a class="button intro__button" href="#contacts">
                 I want to be an astronaut!
-              </button>
+              </a>
             </div>
 
             <!-- Info -->
@@ -164,7 +167,9 @@
                     </td>
                   </tr>
                 </table>
-                <button class="button about__button">Book a flight</button>
+                <a class="button about__button" href="#contacts"
+                  >Book a flight</a
+                >
               </div>
             </div>
 
@@ -226,7 +231,9 @@
                     </td>
                   </tr>
                 </table>
-                <button class="button about__button">Book a flight</button>
+                <a class="button about__button" href="#contacts"
+                  >Book a flight</a
+                >
               </div>
             </div>
 
@@ -292,7 +299,9 @@
                     </td>
                   </tr>
                 </table>
-                <button class="button about__button">Book a flight</button>
+                <a class="button about__button" href="#contacts"
+                  >Book a flight</a
+                >
               </div>
             </div>
           </div>
@@ -300,7 +309,7 @@
       </section>
 
       <!-- Plan -->
-      <section class="section plan">
+      <section class="section plan" id="plan">
         <div class="container">
           <div class="plan__inner">
             <!-- Top -->
@@ -352,7 +361,10 @@
           <div class="cta__inner">
             <!-- Top -->
             <div class="section__top cta__top">
-              <h2 class="title section__title">How it goes</h2>
+              <h2 class="title section__title">
+                Hurry <br />
+                up to book!
+              </h2>
 
               <div class="info_box cta__info_box">
                 <p class="info__col cta__info__col">
@@ -379,7 +391,7 @@
       </section>
 
       <!-- Special offers -->
-      <section class="section special">
+      <section class="section special" id="prices">
         <div class="container">
           <div class="special__inner">
             <!-- Top -->
@@ -428,7 +440,7 @@
       </section>
 
       <!-- Services -->
-      <section class="section services">
+      <section class="section services" id="services">
         <div class="container">
           <div class="services__inner">
             <!-- Top -->
@@ -466,7 +478,7 @@
               </div>
 
               <div class="services__buttons">
-                <button class="button services__button">
+                <a class="button services__button" href="#contacts">
                   <img
                     class="services__button_img"
                     src="images/png/small_astronaut.png"
@@ -475,8 +487,10 @@
                     alt=""
                   />
                   Buy photographer services
-                </button>
-                <button class="button services__button">Want and dics</button>
+                </a>
+                <a class="button services__button" href="#contacts"
+                  >Want and dics</a
+                >
               </div>
             </div>
           </div>
@@ -546,7 +560,7 @@
         <div class="container">
           <div class="sections_box__inner">
             <!-- Contacts -->
-            <section class="section contacts">
+            <section class="section contacts" id="contacts">
               <div class="contacts__inners">
                 <!-- Top -->
                 <div class="section__top contacts__tops">
@@ -593,7 +607,7 @@
             </section>
 
             <!-- Guarantees -->
-            <section class="section guarantees">
+            <section class="section guarantees" id="guarantees">
               <div class="guarantees__inners">
                 <!-- Top -->
                 <div class="section__top guarantees__tops">
@@ -672,7 +686,6 @@
       </footer>
     </div>
 
-    <script src="js/jquery.min.js"></script>
     <script src="js/tiny-slider.min.js"></script>
     <script src="js/main.js"></script>
   </body>
