@@ -10,8 +10,9 @@
       href="images/png/small_head.png"
       type="image/png"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/aos.min.css" />
     <link rel="stylesheet" href="css/tiny-slider.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <div class="wrapper">
@@ -71,7 +72,7 @@
         <div class="container">
           <div class="intro__inner">
             <!-- Main -->
-            <div class="intro__main">
+            <div class="intro__main" data-aos="fade-up">
               <h1 class="title intro__main_title">
                 <span class="title__span">Space</span>
                 <span class="title__span">Tourism</span>
@@ -86,7 +87,11 @@
             </div>
 
             <!-- Info -->
-            <div class="info_box intro__info_box">
+            <div
+              class="info_box intro__info_box"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
               <p class="info__col intro__info__col">
                 In 2021, a new era in space exploration has begun - the era of
                 space tourism. Private companies have gained access to outer
@@ -104,6 +109,8 @@
                 class="intro__bg_img"
                 src="images/jpg/intro_bg.jpg"
                 alt="Astronaut on the background of space"
+                data-aos="fade-in"
+                data-aos-delay="500"
               />
             </div>
           </div>
@@ -130,7 +137,7 @@
                   height="540"
                 />
               </div>
-              <div class="about__item_content">
+              <div class="about__item_content" data-aos="fade-in">
                 <h4 class="about__item_name">Virgin Galactic</h4>
                 <p class="about__item_service">Suborbital flight</p>
                 <div class="info_box about__item_info_box">
@@ -192,7 +199,11 @@
                   height="700"
                 />
               </div>
-              <div class="about__item_content">
+              <div
+                class="about__item_content"
+                data-aos="fade-in"
+                data-aos-delay="500"
+              >
                 <h4 class="about__item_name">Blue Origin</h4>
                 <p class="about__item_service">Suborbital flight</p>
                 <div class="info_box about__item_info_box">
@@ -253,10 +264,9 @@
                   src="images/jpg/spacex_img.jpg"
                   alt="Elon Musk on the background of Mars and Rocket"
                   width="500"
-                  height="603"
                 />
               </div>
-              <div class="about__item_content">
+              <div class="about__item_content" data-aos="fade-in">
                 <h4 class="about__item_name">SpaceX</h4>
                 <p class="about__item_service">Can go to the Moon or Mars?</p>
                 <div class="info_box about__item_info_box">
@@ -368,13 +378,13 @@
         <div class="container">
           <div class="cta__inner">
             <!-- Top -->
-            <div class="section__top cta__top">
+            <div class="section__top cta__top" data-aos="fade-up">
               <h2 class="title section__title">
                 Hurry <br />
                 up to book!
               </h2>
 
-              <div class="info_box cta__info_box">
+              <div class="info_box cta__info_box" data-aos="fade-up">
                 <p class="info__col cta__info__col">
                   Virgin Galactic management hopes that massive suborbital space
                   flights will begin before 2022. The company has been selling
@@ -410,7 +420,7 @@
             <!-- Items -->
             <div class="special__content">
               <!-- Item -->
-              <div class="special__item">
+              <div class="special__item" data-aos="fade-up">
                 <div class="special__item_info">
                   <p class="special__item_text">
                     Book your flight <span>right now</span> and get a discount
@@ -421,13 +431,13 @@
                     <p class="special__item_new_price">$ 249 000</p>
                   </div>
                 </div>
-                <button class="button special__item_button">
+                <a class="button special__item_button" href="#contacts">
                   Book a flight
-                </button>
+                </a>
               </div>
 
               <!-- Item -->
-              <div class="special__item">
+              <div class="special__item" data-aos="fade-up">
                 <div class="special__item_info">
                   <p class="special__item_text">
                     Refer a friend and get <span>10% discount</span> on your
@@ -438,9 +448,9 @@
                     <p class="special__item_new_price">$ 225 000</p>
                   </div>
                 </div>
-                <button class="button special__item_button">
+                <a class="button special__item_button" href="#contacts">
                   Book a flight
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -696,6 +706,7 @@
       </footer>
     </div>
 
+    <script src="js/aos.min.js"></script>
     <script src="js/tiny-slider.min.js"></script>
     <script src="js/main.js"></script>
   </body>
