@@ -980,10 +980,17 @@ body::-webkit-scrollbar-thumb {
   .intro__main_title .title__span:nth-child(2) {
     font-size: 1.8em;
   }
+  .intro__info__col {
+    margin: 0 auto;
+    max-width: 300px;
+  }
   .intro__button {
     display: block;
     width: fit-content;
     margin: 0 auto;
+  }
+  .intro__bg_img {
+    object-position: 70% center;
   }
   /* About */
   .about__item_info_box {
