@@ -191,12 +191,13 @@ body::-webkit-scrollbar-thumb {
 
 /* ===== Header ===== */
 .header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
-  padding-top: 5em;
+  padding: 50px 0;
+  background: linear-gradient(180deg, #000, transparent);
 }
 .header__inner {
   display: flex;
@@ -221,9 +222,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media (max-width: 992px) {
-  .header {
-    padding-top: 3em;
-  }
   .navbar {
     position: fixed;
     top: 0;
@@ -274,6 +272,7 @@ body::-webkit-scrollbar-thumb {
   border: none;
   margin-left: auto;
   z-index: 1001;
+  display: none;
 }
 .burger::before,
 .burger::after,
@@ -839,6 +838,10 @@ body::-webkit-scrollbar-thumb {
   /* Navbar */
   .header__link {
     display: none;
+  }
+  /* Burger */
+  .burger {
+    display: flex;
   }
   /* Intro */
   .intro__info_box {
