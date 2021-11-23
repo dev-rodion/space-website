@@ -29,7 +29,7 @@
 }
 
 body {
-  background: #000 url("/images/jpg/background.jpg") no-repeat fixed center
+  background: #000 url("../images/jpg/background.jpg") no-repeat fixed center
     center;
   background-size: cover;
   font-family: "SF Pro Diplay", sans-serif;
